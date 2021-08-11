@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02211586-1190-48f3-a4c2-860758254954" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-service-impl/src/main/java/com/chen/shop/buyer/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service-impl/src/main/java/com/chen/shop/buyer/service/impl/ArticleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-service-impl/target/classes/com/chen/shop/buyer/service/impl/ArticleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service-impl/target/classes/com/chen/shop/buyer/service/impl/ArticleServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-buyer-api/src/main/resources/application-local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mall-buyer-api/src/main/resources/application-local.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,44 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall-dao/src/main/java/com/chen/shop/buyer/mapper/TestMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall-model/src/main/java/com/chen/shop/buyer/pojo/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall-service-impl/src/main/java/com/chen/shop/buyer/service/impl/ArticleServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="20" column="71" lean-forward="true" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="71" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mall-buyer-provider/src/main/java/com/chen/shop/dubbo/config/MybatisPlusConfig.java">
+        <entry file="file://$PROJECT_DIR$/mall-service-impl/src/main/java/com/chen/shop/buyer/service/impl/CategoryServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+            <state relative-caret-position="-792">
+              <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,6 +44,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -102,7 +68,6 @@
         <option value="$PROJECT_DIR$/mall-common/src/main/java/com/chen/shop/common/vo/Result.java" />
         <option value="$PROJECT_DIR$/mall-model/pom.xml" />
         <option value="$PROJECT_DIR$/mall-dao/pom.xml" />
-        <option value="$PROJECT_DIR$/mall-service-impl/pom.xml" />
         <option value="$PROJECT_DIR$/mall-buyer-api/pom.xml" />
         <option value="$PROJECT_DIR$/mall-buyer-api/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/BuyerApp.java" />
@@ -111,7 +76,6 @@
         <option value="$PROJECT_DIR$/mall-buyer-provider/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/mall-buyer-provider/src/main/java/com/chen/shop/dubbo/DubboApp.java" />
         <option value="$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/config/WebMVCConfig.java" />
-        <option value="$PROJECT_DIR$/mall-buyer-api/src/main/resources/application-local.properties" />
         <option value="$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/config/Knife4jConfiguration.java" />
         <option value="$PROJECT_DIR$/mall-service/src/main/java/com/chen/shop/service/ArticleService.java" />
         <option value="$PROJECT_DIR$/mall-service-impl/src/main/java/com/chen/shop/service/impl/ArticleService.java" />
@@ -123,6 +87,18 @@
         <option value="$PROJECT_DIR$/mall-dao/src/main/java/com/chen/shop/buyer/mapper/TestMapper.java" />
         <option value="$PROJECT_DIR$/mall-service-impl/src/main/java/com/chen/shop/buyer/service/impl/ArticleServiceImpl.java" />
         <option value="$PROJECT_DIR$/mall-buyer-provider/src/main/java/com/chen/shop/dubbo/config/MybatisPlusConfig.java" />
+        <option value="$PROJECT_DIR$/mall-buyer-api/src/main/resources/application-local.properties" />
+        <option value="$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/controller/goods/GoodsCategoryController.java" />
+        <option value="$PROJECT_DIR$/mall-model/src/main/java/com/chen/shop/model/buyer/vo/CategroyVO.java" />
+        <option value="$PROJECT_DIR$/mall-model/src/main/java/com/chen/shop/model/buyer/vo/CategoryVO.java" />
+        <option value="$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/service/goods/GoodsCategoryService.java" />
+        <option value="$PROJECT_DIR$/mall-service/src/main/java/com/chen/shop/buyer/service/CategoryService.java" />
+        <option value="$PROJECT_DIR$/mall-dao/src/main/java/com/chen/shop/buyer/mapper/CategoryMapper.java" />
+        <option value="$PROJECT_DIR$/mall-model/src/main/java/com/chen/shop/model/buyer/pojo/Category.java" />
+        <option value="$PROJECT_DIR$/mall-service-impl/src/test/java/Test.java" />
+        <option value="$PROJECT_DIR$/mall-service-impl/src/test/java/com/chen/shop/buyer/service/impl/CategoryServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/mall-service-impl/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-service-impl/src/main/java/com/chen/shop/buyer/service/impl/CategoryServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -148,12 +124,21 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="mall-buyer-provider" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="mall-service-impl" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="mall-service-impl" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="832" />
+    <option name="x" value="918" />
     <option name="width" value="1060" />
     <option name="height" value="1030" />
   </component>
@@ -201,6 +186,64 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-buyer-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="buyer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-buyer-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="buyer" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-buyer-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="buyer" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-buyer-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="buyer" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="goods" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-buyer-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="buyer" type="462c0819:PsiDirectoryNode" />
+              <item name="goods" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-buyer-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
@@ -315,7 +358,73 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
               <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="buyer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="buyer" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
@@ -367,6 +476,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -381,6 +492,14 @@
     <property name="project.structure.side.proportion" value="0.5717464" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.chen.shop.buyer.service.impl" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -394,6 +513,32 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.BuyerApp">
+    <configuration name="CategoryServiceImplTest.findCategoryTree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mall-service-impl" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chen.shop.buyer.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.chen.shop.buyer.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.chen.shop.buyer.service.impl.CategoryServiceImplTest" />
+      <option name="METHOD_NAME" value="findCategoryTree" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mall-service-impl" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BuyerApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="mall-buyer-api" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.chen.shop.buyer.BuyerApp" />
@@ -417,6 +562,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.DubboApp" />
+        <item itemvalue="JUnit.CategoryServiceImplTest.findCategoryTree" />
+        <item itemvalue="JUnit.Test.test01" />
       </list>
     </recent_temporary>
   </component>
@@ -433,17 +580,29 @@
       <workItem from="1628562338116" duration="10193000" />
       <workItem from="1628584066062" duration="6906000" />
       <workItem from="1628602135729" duration="1541000" />
-      <workItem from="1628604090192" duration="2799000" />
+      <workItem from="1628604090192" duration="15774000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Test_test01 - 2021.08.11 at 16h 47m 21s.xml">
+      <configuration name="Test.test01" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CategoryServiceImplTest_findCategoryTree - 2021.08.11 at 17h 25m 33s.xml">
+      <configuration name="CategoryServiceImplTest.findCategoryTree" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CategoryServiceImplTest_findCategoryTree - 2021.08.11 at 17h 27m 57s.xml">
+      <configuration name="CategoryServiceImplTest.findCategoryTree" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21439000" />
+    <option name="totallyTimeSpent" value="34414000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="666" y="0" width="848" height="824" extended-state="0" />
+    <frame x="735" y="0" width="848" height="824" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.3607595" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27088606" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -452,8 +611,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.48203593" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32934132" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27639753" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -566,23 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/resources/application-local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/config/WebMVCConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/config/Knife4jConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
@@ -606,13 +748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="82">
           <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-service-impl/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -709,6 +844,119 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
           <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/config/WebMVCConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/resources/application-local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/controller/goods/GoodsCategoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="32" column="48" lean-forward="true" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1168#1169#0" expanded="true" />
+            <element signature="e#1210#1211#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-model/src/main/java/com/chen/shop/model/buyer/vo/CategoryVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/service/goods/GoodsCategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="31" column="62" lean-forward="true" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-model/src/main/java/com/chen/shop/model/buyer/pojo/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-dao/src/main/java/com/chen/shop/buyer/mapper/CategoryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-service/src/main/java/com/chen/shop/buyer/service/CategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-service-impl/src/test/java/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-service-impl/src/test/java/com/chen/shop/buyer/service/impl/CategoryServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-service-impl/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="34" column="10" lean-forward="true" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-service-impl/src/main/java/com/chen/shop/buyer/service/impl/CategoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-792">
+          <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
