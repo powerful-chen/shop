@@ -1,7 +1,11 @@
 package com.chen.shop.buyer.service.impl;
 
+import com.chen.shop.buyer.mapper.TestMapper;
+import com.chen.shop.buyer.pojo.Test;
 import com.chen.shop.buyer.service.ArticleService;
 import org.apache.dubbo.config.annotation.DubboService;
+
+import javax.annotation.Resource;
 
 /**
  * @ClassName ArticleServiceImpl
@@ -16,8 +20,13 @@ import org.apache.dubbo.config.annotation.DubboService;
 //interfaceClass 不加这个事务 无法使用
 @DubboService(version = "1.0.0", interfaceClass = ArticleService.class)
 public class ArticleServiceImpl implements ArticleService {
+
+    @Resource
+    private TestMapper testMapper;
+
     @Override
     public String findArticle() {
-        return "test dubbo provider";
+        Test test = testMapper.selectById(1);
+        return test.getUsername();
     }
 }
