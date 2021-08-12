@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="02211586-1190-48f3-a4c2-860758254954" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-buyer-api/src/main/resources/application-local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mall-buyer-api/src/main/resources/application-local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-service-impl/src/main/java/com/chen/shop/buyer/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service-impl/src/main/java/com/chen/shop/buyer/service/impl/CategoryServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,13 +25,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mall-service-impl/src/main/java/com/chen/shop/buyer/service/impl/CategoryServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-792">
-              <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+            <state relative-caret-position="164">
+              <caret line="93" column="20" lean-forward="true" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/handler/BusinessExceptionHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall-model/src/main/java/com/chen/shop/model/buyer/vo/CategoryVO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/controller/goods/GoodsCategoryController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="32" column="48" lean-forward="true" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1168#1169#0" expanded="true" />
+                <element signature="e#1237#1238#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/controller/ArticleBuyerController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="30" column="31" lean-forward="true" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#989#990#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -43,8 +91,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -82,7 +130,6 @@
         <option value="$PROJECT_DIR$/mall-service-impl/src/main/java/com/chen/shop/buyer/service/impl/ArticleService.java" />
         <option value="$PROJECT_DIR$/mall-service/src/main/java/com/chen/shop/buyer/service/ArticleService.java" />
         <option value="$PROJECT_DIR$/mall-buyer-provider/src/main/resources/application-local.properties" />
-        <option value="$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/controller/ArticleBuyerController.java" />
         <option value="$PROJECT_DIR$/mall-model/src/main/java/com/chen/shop/buyer/pojo/Test.java" />
         <option value="$PROJECT_DIR$/mall-dao/src/main/java/com/chen/shop/buyer/mapper/TestMapper.java" />
         <option value="$PROJECT_DIR$/mall-service-impl/src/main/java/com/chen/shop/buyer/service/impl/ArticleServiceImpl.java" />
@@ -99,6 +146,8 @@
         <option value="$PROJECT_DIR$/mall-service-impl/src/test/java/com/chen/shop/buyer/service/impl/CategoryServiceImplTest.java" />
         <option value="$PROJECT_DIR$/mall-service-impl/pom.xml" />
         <option value="$PROJECT_DIR$/mall-service-impl/src/main/java/com/chen/shop/buyer/service/impl/CategoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/handler/BusinessExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/controller/ArticleBuyerController.java" />
       </list>
     </option>
   </component>
@@ -138,7 +187,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="918" />
+    <option name="x" value="876" />
+    <option name="y" value="7" />
     <option name="width" value="1060" />
     <option name="height" value="1030" />
   </component>
@@ -226,6 +276,16 @@
               <item name="buyer" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
               <item name="goods" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-buyer-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="buyer" type="462c0819:PsiDirectoryNode" />
+              <item name="handler" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
@@ -580,7 +640,7 @@
       <workItem from="1628562338116" duration="10193000" />
       <workItem from="1628584066062" duration="6906000" />
       <workItem from="1628602135729" duration="1541000" />
-      <workItem from="1628604090192" duration="15774000" />
+      <workItem from="1628604090192" duration="22408000" />
     </task>
     <servers />
   </component>
@@ -596,13 +656,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34414000" />
+    <option name="totallyTimeSpent" value="41048000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="735" y="0" width="848" height="824" extended-state="0" />
+    <frame x="701" y="6" width="848" height="824" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27088606" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.26835442" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -612,7 +672,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32934132" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.27639753" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3248503" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -803,16 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/controller/ArticleBuyerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mall-model/src/main/java/com/chen/shop/buyer/pojo/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -864,28 +914,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/controller/goods/GoodsCategoryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="32" column="48" lean-forward="true" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1168#1169#0" expanded="true" />
-            <element signature="e#1210#1211#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-model/src/main/java/com/chen/shop/model/buyer/vo/CategoryVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -953,12 +981,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-service-impl/src/main/java/com/chen/shop/buyer/service/impl/CategoryServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/controller/goods/GoodsCategoryController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-792">
-          <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+        <state relative-caret-position="178">
+          <caret line="32" column="48" lean-forward="true" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1168#1169#0" expanded="true" />
+            <element signature="e#1237#1238#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-model/src/main/java/com/chen/shop/model/buyer/vo/CategoryVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-service-impl/src/main/java/com/chen/shop/buyer/service/impl/CategoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="93" column="20" lean-forward="true" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/handler/BusinessExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/controller/ArticleBuyerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="30" column="31" lean-forward="true" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#989#990#0" expanded="true" />
           </folding>
         </state>
       </provider>

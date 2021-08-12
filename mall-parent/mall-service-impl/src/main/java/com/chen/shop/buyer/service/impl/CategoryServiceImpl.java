@@ -86,10 +86,18 @@ public class CategoryServiceImpl implements CategoryService {
         //List<CategoryVO> categoryVOS = copyList(categories);
         //for (CategoryVO categoryVO : categoryVOS) {
         //    LambdaQueryWrapper<Category> queryWrapper1 = new LambdaQueryWrapper<>();
-        //    queryWrapper1.eq(Category::getParentId, categoryVO.getParentId());
+        //    queryWrapper1.eq(Category::getParentId, categoryVO.getId());
         //    queryWrapper1.eq(Category::getStatus, 0);
         //    List<Category> categories1 = categoryMapper.selectList(queryWrapper1);
-        //    categoryVO.setChildren(copyList(categories1));
+        //    List<CategoryVO> categoryVOS1 = copyList(categories1);
+        //    for (CategoryVO vo : categoryVOS1) {
+        //        LambdaQueryWrapper<Category> queryWrapper2 = new LambdaQueryWrapper<>();
+        //        queryWrapper2.eq(Category::getParentId, vo.getId());
+        //        queryWrapper2.eq(Category::getStatus, 0);
+        //        List<Category> categories2 = categoryMapper.selectList(queryWrapper2);
+        //        vo.setChildren(copyList(categories2));
+        //    }
+        //    categoryVO.setChildren(categoryVOS1);
         //}
         //return categoryVOS;
 
