@@ -1,5 +1,9 @@
 package com.chen.shop.buyer.service;
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.chen.shop.model.buyer.params.ArticleSearchParams;
+import com.chen.shop.model.buyer.vo.article.ArticleVO;
+
 /**
  * @ClassName ArticleService
  * @Description TODO
@@ -8,4 +12,7 @@ package com.chen.shop.buyer.service;
  */
 public interface ArticleService {
     String findArticle();
+
+    //根据查询条件获取文章的分页信息
+    Page<ArticleVO> articlePage(ArticleSearchParams articleSearchParams);
 }
