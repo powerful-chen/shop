@@ -2,12 +2,15 @@ package com.chen.shop.buyer.service.impl.article;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.chen.shop.buyer.mapper.ArticleCategoryMapper;
 import com.chen.shop.buyer.mapper.ArticleMapper;
 import com.chen.shop.buyer.mapper.TestMapper;
 import com.chen.shop.buyer.pojo.Test;
 import com.chen.shop.buyer.service.ArticleService;
 import com.chen.shop.model.buyer.params.ArticleSearchParams;
 import com.chen.shop.model.buyer.pojo.Article;
+import com.chen.shop.model.buyer.pojo.ArticleCategory;
+import com.chen.shop.model.buyer.vo.article.ArticleCategoryVO;
 import com.chen.shop.model.buyer.vo.article.ArticleVO;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.dubbo.config.annotation.DubboService;
@@ -44,6 +47,9 @@ public class ArticleServiceImpl implements ArticleService {
     @Autowired
     private ArticleMapper articleMapper;
 
+    @Autowired
+    private ArticleCategoryMapper articleCategoryMapper;
+
     @Override
     public Page<ArticleVO> articlePage(ArticleSearchParams articleSearchParams) {
         /**
@@ -69,6 +75,7 @@ public class ArticleServiceImpl implements ArticleService {
         if (StringUtils.isNotBlank(articleSearchParams.getType())) {
             queryWrapper.eq(Article::getType, articleSearchParams.getType());
         }
+        queryWrapper.select(Article::getCategoryId, Article::getId, Article::getTitle, Article::getType);
         Page<Article> articlePage1 = articleMapper.selectPage(articlePage, queryWrapper);
 
         Page<ArticleVO> articleVOPage = new Page<>();
@@ -77,6 +84,82 @@ public class ArticleServiceImpl implements ArticleService {
         List<ArticleVO> articleVOList = copyList(records);
         articleVOPage.setRecords(articleVOList);
         return articleVOPage;
+    }
+
+    @Override
+    public ArticleVO findArticleById(Long id) {
+        Article article = articleMapper.selectById(id);
+        return copy(article);
+    }
+
+    @Override
+    public List<ArticleCategoryVO> findAllArticleCategory() {
+
+        //查找所有的文章分类，代码组成树形结构，使用递归的方式
+        LambdaQueryWrapper<ArticleCategory> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.eq(ArticleCategory::getDeleteFlag, false);
+
+        List<ArticleCategory> articleCategories = articleCategoryMapper.selectList(queryWrapper);
+        List<ArticleCategoryVO> articleCategoryVOList = copyCategoryList(articleCategories);
+
+        List<ArticleCategoryVO> articleCategoryVOS = new ArrayList<>();
+
+        for (ArticleCategoryVO articleCategoryVO : articleCategoryVOList) {
+            if (articleCategoryVO.getParentId().equals("0")) {
+                articleCategoryVOS.add(articleCategoryVO);
+                addCategoryChild(articleCategoryVO, articleCategoryVOList);
+            }
+        }
+        return articleCategoryVOS;
+
+        //使用循环的方式
+        //LambdaQueryWrapper<ArticleCategory> queryWrapper = new LambdaQueryWrapper<>();
+        //queryWrapper.eq(ArticleCategory::getDeleteFlag, false);
+        //queryWrapper.eq(ArticleCategory::getParentId, 0);
+        //List<ArticleCategory> articleCategories = articleCategoryMapper.selectList(queryWrapper);
+        //List<ArticleCategoryVO> articleCategoryVOList = copyCategoryList(articleCategories);
+        //for (ArticleCategoryVO articleCategoryVO : articleCategoryVOList) {
+        //    LambdaQueryWrapper<ArticleCategory> queryWrapper1 = new LambdaQueryWrapper<>();
+        //    queryWrapper1.eq(ArticleCategory::getDeleteFlag, false);
+        //    queryWrapper1.eq(ArticleCategory::getParentId, articleCategoryVO.getId());
+        //    List<ArticleCategory> articleCategories1 = articleCategoryMapper.selectList(queryWrapper1);
+        //    List<ArticleCategoryVO> articleCategoryVOS = copyCategoryList(articleCategories1);
+        //    articleCategoryVO.setChildren(articleCategoryVOS);
+        //}
+        //return articleCategoryVOList;
+    }
+
+    private void addCategoryChild(ArticleCategoryVO articleCategoryVO, List<ArticleCategoryVO> articleCategoryVOList) {
+        List<ArticleCategoryVO> categoryVOList = new ArrayList<>();
+        for (ArticleCategoryVO categoryVO : articleCategoryVOList) {
+            if (articleCategoryVO.getId().equals(categoryVO.getParentId())) {
+                categoryVOList.add(categoryVO);
+                addCategoryChild(categoryVO, articleCategoryVOList);
+            }
+        }
+        articleCategoryVO.setChildren(categoryVOList);
+    }
+
+
+    private ArticleCategoryVO copyCategory(ArticleCategory articleCategory) {
+        if (articleCategory == null) {
+            return null;
+        }
+        ArticleCategoryVO articleCategoryVO = new ArticleCategoryVO();
+
+        BeanUtils.copyProperties(articleCategory, articleCategoryVO);
+        articleCategoryVO.setId(articleCategory.getId().toString());
+        articleCategoryVO.setParentId(articleCategory.getParentId().toString());
+        return articleCategoryVO;
+    }
+
+    private List<ArticleCategoryVO> copyCategoryList(List<ArticleCategory> articleCategories) {
+        List<ArticleCategoryVO> articleCategoryVOS = new ArrayList<>();
+
+        for (ArticleCategory articleCategory : articleCategories) {
+            articleCategoryVOS.add(copyCategory(articleCategory));
+        }
+        return articleCategoryVOS;
     }
 
     private ArticleVO copy(Article article) {
