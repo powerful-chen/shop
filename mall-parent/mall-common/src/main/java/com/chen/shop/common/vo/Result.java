@@ -55,4 +55,11 @@ public class Result<T> implements Serializable {
         return new Result<>(false, BusinessCodeEnum.DEFAULT_SYS_ERROR.getMsg(), BusinessCodeEnum.DEFAULT_SUCCESS.getCode(), null);
     }
 
+    public static <T> Result<T> noPermission() {
+        return new Result<>(false, BusinessCodeEnum.HTTP_NO_PERMISSION.getMsg(), BusinessCodeEnum.HTTP_NO_PERMISSION.getCode(), null);
+    }
+
+    public static <T> Result<T> noLogin() {
+        return new Result<>(false, BusinessCodeEnum.HTTP_NO_LOGIN.getMsg(), BusinessCodeEnum.HTTP_NO_LOGIN.getCode(), null);
+    }
 }

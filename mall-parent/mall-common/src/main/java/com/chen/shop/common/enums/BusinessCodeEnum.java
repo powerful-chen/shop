@@ -19,6 +19,8 @@ public enum BusinessCodeEnum {
      * XXX具体编码（000：表示成功，999：系统异常，998：数据库异常，NNN：其它，100：参数异常，200：业务异常）
      * 200开头代码系统默认，其余系统使用10－199之间
      */
+    HTTP_NO_LOGIN(401, "登录已失效,请重新登录"),
+    HTTP_NO_PERMISSION(403, "抱歉,你没有访问权限"),
     DEFAULT_SUCCESS(2000000000, "default success"),
     DEFAULT_SYS_ERROR(2000000999, "系统错误"),
     CHECK_PARAM_NO_RESULT(2000000100, "检测参数无结果"),
