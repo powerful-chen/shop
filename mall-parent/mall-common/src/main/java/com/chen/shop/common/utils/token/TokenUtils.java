@@ -6,7 +6,12 @@ import io.jsonwebtoken.Jwts;
 import java.util.Date;
 
 public class TokenUtils {
-
+    /**
+     * @param username
+     * @param claim
+     * @param expirationTime 分钟级别的
+     * @return
+     */
     public static String createToken(String username, Object claim, Long expirationTime) {
         //JWT 生成
         return Jwts.builder()

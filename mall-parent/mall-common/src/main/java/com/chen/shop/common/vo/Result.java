@@ -48,11 +48,11 @@ public class Result<T> implements Serializable {
     }
 
     public static <T> Result<T> fail(Integer code, String message) {
-        return new Result<>(true, message, code, null);
+        return new Result<>(false, message, code, null);
     }
 
     public static <T> Result<T> fail() {
-        return new Result<>(true, BusinessCodeEnum.DEFAULT_SYS_ERROR.getMsg(), BusinessCodeEnum.DEFAULT_SUCCESS.getCode(), null);
+        return new Result<>(false, BusinessCodeEnum.DEFAULT_SYS_ERROR.getMsg(), BusinessCodeEnum.DEFAULT_SUCCESS.getCode(), null);
     }
 
 }

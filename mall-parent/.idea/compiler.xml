@@ -12,6 +12,7 @@
         <module name="mall-common" />
         <module name="mall-dao" />
         <module name="mall-service" />
+        <module name="mall-sso" />
         <module name="mall-buyer-provider" />
         <module name="mall-model" />
       </profile>
@@ -27,6 +28,7 @@
       <module name="mall-parent" options="-parameters" />
       <module name="mall-service" options="-parameters" />
       <module name="mall-service-impl" options="-parameters" />
+      <module name="mall-sso" options="-parameters" />
     </option>
   </component>
 </project>
