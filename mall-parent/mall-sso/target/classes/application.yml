@@ -10,3 +10,9 @@ spring:
     #本机开发环境 多环境配置
   profiles:
     active: local
+##mybatisplus
+mybatis-plus:
+  global-config:
+    db-config:
+      table-prefix: ms_
+  mapper-locations: classpath*:mapper/*.xml

@@ -3,9 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="02211586-1190-48f3-a4c2-860758254954" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-buyer-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-buyer-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/chen/shop/common/enums/BusinessCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/chen/shop/common/enums/BusinessCodeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-common/src/main/java/com/chen/shop/common/vo/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-common/src/main/java/com/chen/shop/common/vo/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-sso/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-sso/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-sso/src/main/java/com/chen/shop/sso/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-sso/src/main/java/com/chen/shop/sso/service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-sso/src/main/resources/application-local.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-sso/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-sso/target/classes/application-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-sso/target/classes/application-local.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-sso/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-sso/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-sso/target/classes/com/chen/shop/sso/service/MemberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-sso/target/classes/com/chen/shop/sso/service/MemberService.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,46 +47,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/config/BuyerSecurityConfig.java">
+        <entry file="file://$PROJECT_DIR$/mall-sso/src/main/resources/application-local.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1344">
-              <caret line="67" column="46" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="308">
+              <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/resources/application.yml">
+        <entry file="file://$PROJECT_DIR$/mall-sso/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/handler/security/BuyerAuthenticationFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1110">
-              <caret line="100" column="41" selection-start-line="100" selection-start-column="41" selection-end-line="100" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/chen/shop/common/utils/token/SecretKeyUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="242">
+              <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -93,8 +70,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit4 Test Class" />
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -114,18 +91,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mall-model/src/main/java/com/chen/shop/model/buyer/params/PageParams.java" />
-        <option value="$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/controller/ArticleBuyerController.java" />
-        <option value="$PROJECT_DIR$/mall-model/src/main/java/com/chen/shop/model/buyer/pojo/ArticleCategory.java" />
-        <option value="$PROJECT_DIR$/mall-model/src/main/java/com/chen/shop/model/buyer/vo/article/ArticleCategoryVO.java" />
-        <option value="$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/controller/article/ArticleBuyerController.java" />
-        <option value="$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/service/article/BuyerArticleService.java" />
-        <option value="$PROJECT_DIR$/mall-service/src/main/java/com/chen/shop/buyer/service/ArticleService.java" />
-        <option value="$PROJECT_DIR$/mall-dao/src/main/java/com/chen/shop/buyer/mapper/ArticleCategoryMapper.java" />
-        <option value="$PROJECT_DIR$/mall-service-impl/src/main/java/com/chen/shop/buyer/service/impl/article/ArticleServiceImpl.java" />
-        <option value="$PROJECT_DIR$/mall-model/src/main/java/com/chen/shop/model/buyer/pojo/VerificationSource.java" />
-        <option value="$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/controller/common/SliderImageController.java" />
-        <option value="$PROJECT_DIR$/mall-model/src/main/java/com/chen/shop/model/buyer/enums/VerificationSourceEnum.java" />
         <option value="$PROJECT_DIR$/mall-model/src/main/java/com/chen/shop/model/buyer/enums/VerificationEnums.java" />
         <option value="$PROJECT_DIR$/mall-model/src/main/java/com/chen/shop/model/buyer/vo/common/VerificationSourceVO.java" />
         <option value="$PROJECT_DIR$/mall-model/src/main/java/com/chen/shop/model/buyer/vo/common/slider/VerificationVO.java" />
@@ -135,8 +100,6 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/mall-service-impl/src/main/java/com/chen/shop/buyer/service/impl/common/VerificationSourceServiceImpl.java" />
         <option value="$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/service/common/VerificationService.java" />
-        <option value="$PROJECT_DIR$/mall-sso/pom.xml" />
-        <option value="$PROJECT_DIR$/mall-sso/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/mall-sso/src/main/java/com/chen/shop/sso/SSOApp.java" />
         <option value="$PROJECT_DIR$/mall-model/src/main/java/com/chen/shop/model/buyer/pojo/Member.java" />
         <option value="$PROJECT_DIR$/mall-sso/src/main/java/com/chen/shop/sso/service/VerificationService.java" />
@@ -148,13 +111,11 @@
         <option value="$PROJECT_DIR$/mall-common/src/main/java/com/chen/shop/common/security/AuthUser.java" />
         <option value="$PROJECT_DIR$/mall-common/src/main/java/com/chen/shop/common/security/Token.java" />
         <option value="$PROJECT_DIR$/mall-common/src/main/java/com/chen/shop/common/cache/CachePrefix.java" />
-        <option value="$PROJECT_DIR$/mall-sso/src/main/java/com/chen/shop/sso/service/MemberService.java" />
         <option value="$PROJECT_DIR$/mall-sso/src/main/java/com/chen/shop/sso/handler/RequestInterceptor.java" />
         <option value="$PROJECT_DIR$/mall-sso/src/main/java/com/chen/shop/sso/config/MybatisPlusConfig.java" />
         <option value="$PROJECT_DIR$/mall-sso/src/main/java/com/chen/shop/sso/config/WebMVCConfig.java" />
         <option value="$PROJECT_DIR$/mall-sso/src/main/java/com/chen/shop/sso/handler/BusinessExceptionHandler.java" />
         <option value="$PROJECT_DIR$/mall-sso/src/main/java/com/chen/shop/sso/controller/MembersController.java" />
-        <option value="$PROJECT_DIR$/mall-sso/src/main/resources/application-local.yml" />
         <option value="$PROJECT_DIR$/mall-buyer-api/pom.xml" />
         <option value="$PROJECT_DIR$/mall-common/src/main/java/com/chen/shop/common/utils/ResponseUtil.java" />
         <option value="$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/handler/security/CustomAccessDeniedHandler.java" />
@@ -165,6 +126,22 @@
         <option value="$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/handler/security/BuyerAuthenticationFilter.java" />
         <option value="$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/config/BuyerSecurityConfig.java" />
         <option value="$PROJECT_DIR$/mall-buyer-api/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/mall-model/src/main/java/com/chen/shop/model/buyer/vo/member/MemberVO.java" />
+        <option value="$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/controller/members/MemberBuyerController.java" />
+        <option value="$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/handler/security/UserContext.java" />
+        <option value="$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/handler/security/AuthenticationHandler.java" />
+        <option value="$PROJECT_DIR$/mall-service/src/main/java/com/chen/shop/sso/api/SSOApi.java" />
+        <option value="$PROJECT_DIR$/mall-sso/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-sso/src/main/java/com/chen/shop/sso/service/MemberService.java" />
+        <option value="$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/service/members/MemberBuyerService.java" />
+        <option value="$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/handler/security/UserContextInit.java" />
+        <option value="$PROJECT_DIR$/mall-sso/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/mall-sso/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/mall-buyer-api/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/mall-sso/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/mall-sso/src/main/resources/application-local.properties" />
+        <option value="$PROJECT_DIR$/mall-sso/src/main/java/com/chen/shop/sso/api/SSOApiImpl.java" />
+        <option value="$PROJECT_DIR$/mall-sso/src/main/resources/application-local.yml" />
       </list>
     </option>
   </component>
@@ -185,23 +162,12 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="mall-buyer-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="mall-buyer-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="897" />
-    <option name="y" value="6" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="803" />
     <option name="width" value="1060" />
     <option name="height" value="1030" />
   </component>
@@ -216,7 +182,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="CatdeaLogs" />
       <pane id="ProjectPane">
         <subPane>
@@ -249,52 +214,30 @@
               <item name="mall-buyer-api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-buyer-api" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-buyer-provider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-buyer-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-buyer-provider" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="buyer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-buyer-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="buyer" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-buyer-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="buyer" type="462c0819:PsiDirectoryNode" />
-              <item name="handler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-buyer-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="buyer" type="462c0819:PsiDirectoryNode" />
-              <item name="handler" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-buyer-api" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-buyer-provider" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -302,63 +245,101 @@
             <path>
               <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-common" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-sso" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-common" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-sso" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-common" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-sso" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-common" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-sso" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-common" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-sso" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="sso" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-common" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-sso" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="token" type="462c0819:PsiDirectoryNode" />
+              <item name="sso" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-sso" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sso" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-sso" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sso" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-sso" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sso" type="462c0819:PsiDirectoryNode" />
+              <item name="handler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-sso" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sso" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mall-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mall-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="mall-sso" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -371,7 +352,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mall-common/src/main/java/com/chen/shop/common" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mall-sso/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -389,14 +370,15 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.chen.shop.buyer.service.impl" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.chen.shop.sso.handler" />
       <recent name="com.chen.shop.sso.config" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\学习区\练手项目\电商项目\商城代码\mall-parent\mall-sso\src\main\resources" />
       <recent name="F:\学习区\练手项目\电商项目\商城代码\mall-parent\mall-common\src\main\java\com\chen\shop\common" />
       <recent name="F:\学习区\练手项目\电商项目\商城代码\mall-parent\mall-model\src\main\java\com\chen\shop\model\buyer\vo\pages" />
     </key>
@@ -413,7 +395,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SSOApp">
+  <component name="RunManager" selected="Spring Boot.BuyerApp">
     <configuration name="CategoryServiceImplTest.findCategoryTree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mall-service-impl" />
       <extension name="coverage">
@@ -475,8 +457,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.SSOApp" />
         <item itemvalue="Spring Boot.DubboApp" />
+        <item itemvalue="Spring Boot.SSOApp" />
         <item itemvalue="JUnit.CategoryServiceImplTest.findCategoryTree" />
         <item itemvalue="JUnit.Test.test01" />
       </list>
@@ -498,7 +480,9 @@
       <workItem from="1628604090192" duration="32230000" />
       <workItem from="1628823346771" duration="33958000" />
       <workItem from="1628989912569" duration="1475000" />
-      <workItem from="1628995841539" duration="28459000" />
+      <workItem from="1628995841539" duration="38456000" />
+      <workItem from="1629163094495" duration="4488000" />
+      <workItem from="1629169325214" duration="4402000" />
     </task>
     <servers />
   </component>
@@ -514,10 +498,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114762000" />
+    <option name="totallyTimeSpent" value="133649000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="718" y="5" width="848" height="824" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.5026178" side_tool="true" weight="0.26708862" />
       <window_info id="Designer" order="1" />
@@ -526,11 +510,11 @@
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Web" order="6" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.4973822" visible="true" weight="0.26455697" />
+      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.4973822" visible="true" weight="0.2124665" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32934132" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37275448" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.398827" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24486804" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.38269794" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -545,7 +529,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.18101266" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.34115282" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" weight="0.3297587" />
@@ -560,247 +544,33 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-sso/src/main/java/com/chen/shop/sso/service/MemberService.java</url>
-          <line>71</line>
+          <url>file://$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/service/members/MemberBuyerService.java</url>
+          <line>26</line>
           <properties />
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-sso/src/main/java/com/chen/shop/sso/controller/MembersController.java</url>
-          <line>33</line>
+          <url>file://$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/controller/members/MemberBuyerController.java</url>
+          <line>25</line>
           <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-sso/src/main/java/com/chen/shop/sso/controller/MembersController.java</url>
-          <line>36</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-sso/src/main/java/com/chen/shop/sso/service/VerificationService.java</url>
-          <line>21</line>
-          <properties />
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mall-sso/src/main/java/com/chen/shop/sso/service/MemberService.java</url>
-          <line>45</line>
+          <line>93</line>
           <properties />
-          <option name="timeStamp" value="7" />
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mall-sso/src/main/java/com/chen/shop/sso/service/MemberService.java</url>
-          <line>85</line>
+          <line>94</line>
           <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-sso/src/main/java/com/chen/shop/sso/service/MemberService.java</url>
-          <line>66</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-sso/src/main/java/com/chen/shop/sso/service/MemberService.java</url>
-          <line>58</line>
-          <properties />
-          <option name="timeStamp" value="10" />
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mall-service-impl/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-service/src/main/java/com/chen/shop/buyer/service/PageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-service/src/main/java/com/chen/shop/buyer/service/VerificationSourceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-dao/src/main/java/com/chen/shop/buyer/mapper/VerificationSourceMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="66" lean-forward="true" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-service-impl/src/main/java/com/chen/shop/buyer/service/impl/pages/PageServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1452">
-          <caret line="66" column="37" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-model/src/main/java/com/chen/shop/model/buyer/pojo/VerificationSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-model/src/main/java/com/chen/shop/model/buyer/vo/common/VerificationSourceVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-service-impl/src/main/java/com/chen/shop/buyer/service/impl/common/VerificationSourceServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2288">
-          <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/controller/common/SliderImageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sso/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-220">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/service/common/VerificationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="146" column="139" lean-forward="true" selection-start-line="146" selection-start-column="12" selection-end-line="146" selection-end-column="139" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sso/src/main/java/com/chen/shop/sso/SSOApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#332#333#0" expanded="true" />
-            <element signature="e#389#390#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/chen/shop/common/context/ThreadContextHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="24" column="50" lean-forward="true" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#823#824#0" expanded="true" />
-            <element signature="e#881#882#0" expanded="true" />
-            <element signature="e#938#939#0" expanded="true" />
-            <element signature="e#994#995#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-model/src/main/java/com/chen/shop/model/buyer/enums/ClientType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-          <folding>
-            <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#853#854#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/chen/shop/common/utils/token/SecurityKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/chen/shop/common/security/UserEnums.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-          <folding>
-            <element signature="e#209#210#0" expanded="true" />
-            <element signature="e#241#242#0" expanded="true" />
-            <element signature="e#272#273#0" expanded="true" />
-            <element signature="e#299#300#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/chen/shop/common/security/Token.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/chen/shop/common/security/AuthUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/chen/shop/common/cache/CachePrefix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mall-common/src/main/java/com/chen/shop/common/utils/token/TokenUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="426">
@@ -842,75 +612,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sso/src/main/java/com/chen/shop/sso/service/VerificationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sso/src/main/java/com/chen/shop/sso/controller/MembersController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.3.7/spring-web-5.3.7.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="111" selection-start-line="111" selection-end-line="111" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mall-dao/src/main/java/com/chen/shop/sso/mapper/MemberMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="58" lean-forward="true" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-model/src/main/java/com/chen/shop/model/buyer/pojo/Member.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="75" column="25" lean-forward="true" selection-start-line="75" selection-start-column="25" selection-end-line="75" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-buyer-provider/src/main/resources/application-local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1358" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-buyer-provider/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/resources/application-local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sso/src/main/java/com/chen/shop/sso/service/MemberService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-219">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -938,27 +643,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sso/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-sso/src/main/resources/application-local.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-buyer-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="45" column="21" lean-forward="true" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1020,27 +704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.5.0/spring-security-core-5.5.0.jar!/org/springframework/security/core/context/SecurityContextHolder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
-          <folding>
-            <element signature="e#1962#1963#0" expanded="true" />
-            <element signature="e#2006#2007#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/handler/security/BuyerAuthenticationFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="100" column="41" selection-start-line="100" selection-start-column="41" selection-end-line="100" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/config/BuyerSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1344">
@@ -1053,8 +716,297 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        <state relative-caret-position="110">
+          <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-buyer-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="50" column="37" lean-forward="true" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-service-impl/src/main/java/com/chen/shop/buyer/service/impl/common/VerificationSourceServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.5.0/spring-security-core-5.5.0.jar!/org/springframework/security/core/context/SecurityContextHolder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-service-impl/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/handler/security/BuyerAuthenticationFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="69" column="14" selection-start-line="69" selection-start-column="14" selection-end-line="69" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-model/src/main/java/com/chen/shop/model/buyer/vo/CategoryVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-model/src/main/java/com/chen/shop/model/buyer/vo/member/MemberVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="790">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-model/src/main/java/com/chen/shop/model/buyer/pojo/Member.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-model/src/main/java/com/chen/shop/model/buyer/pojo/ArticleCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-model/src/main/java/com/chen/shop/model/buyer/pojo/Article.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-272">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-model/src/main/java/com/chen/shop/model/buyer/pojo/TemplateDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/handler/security/UserContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="e#495#496#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/handler/security/UserContextInit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
+            <element signature="e#810#811#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/service/goods/GoodsCategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-service/src/main/java/com/chen/shop/buyer/service/CategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-service-impl/src/main/java/com/chen/shop/buyer/service/impl/CategoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/handler/security/AuthenticationHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-sso/src/main/java/com/chen/shop/sso/service/MemberService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="90" column="20" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/controller/members/MemberBuyerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#825#826#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.3.7/spring-web-5.3.7.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="110" selection-start-line="110" selection-end-line="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/java/com/chen/shop/buyer/service/members/MemberBuyerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-sso/src/main/java/com/chen/shop/sso/controller/MembersController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-sso/src/main/java/com/chen/shop/sso/service/VerificationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-sso/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-sso/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-buyer-provider/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="7" lean-forward="true" selection-end-line="11" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-buyer-provider/src/main/resources/application-local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-buyer-api/src/main/resources/application-local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-sso/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-sso/src/main/resources/application-local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-service/src/main/java/com/chen/shop/sso/api/SSOApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-sso/src/main/java/com/chen/shop/sso/api/SSOApiImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-sso/src/main/resources/application-local.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall-sso/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
         </state>
       </provider>
     </entry>

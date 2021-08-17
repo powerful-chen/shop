@@ -1,7 +1,6 @@
 package com.chen.shop.sso.service;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.chen.shop.sso.mapper.MemberMapper;
 import com.chen.shop.common.cache.CachePrefix;
 import com.chen.shop.common.context.ThreadContextHolder;
 import com.chen.shop.common.security.AuthUser;
@@ -11,7 +10,10 @@ import com.chen.shop.common.utils.token.TokenUtils;
 import com.chen.shop.common.vo.Result;
 import com.chen.shop.model.buyer.enums.ClientType;
 import com.chen.shop.model.buyer.pojo.Member;
+import com.chen.shop.model.buyer.vo.member.MemberVO;
+import com.chen.shop.sso.mapper.MemberMapper;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -84,5 +86,22 @@ public class MemberService {
         token.setAccessToken(accessToken);
         token.setRefreshToken(refreshToken);
         return token;
+    }
+
+    public MemberVO findMemberById(Long id) {
+        LambdaQueryWrapper<Member> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.eq(Member::getId, id).eq(Member::getDisabled, false);
+        Member member = memberMapper.selectOne(queryWrapper);
+        return copy(member);
+    }
+
+    private MemberVO copy(Member member) {
+        if (member == null) {
+            return null;
+        }
+        MemberVO memberVO = new MemberVO();
+        BeanUtils.copyProperties(member, memberVO);
+        memberVO.setId(String.valueOf(member.getId()));
+        return memberVO;
     }
 }
