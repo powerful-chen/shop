@@ -1,16 +1,10 @@
 package com.chen.shop.buyer.handler.security;
 
-import com.alibaba.fastjson.JSON;
-import com.chen.shop.common.cache.CachePrefix;
 import com.chen.shop.common.security.AuthUser;
-import com.chen.shop.common.security.UserEnums;
 import com.chen.shop.common.utils.ResponseUtil;
-import com.chen.shop.common.utils.token.SecretKeyUtil;
 import com.chen.shop.common.utils.token.SecurityKey;
 import com.chen.shop.common.vo.Result;
-import io.jsonwebtoken.Claims;
-import io.jsonwebtoken.ExpiredJwtException;
-import io.jsonwebtoken.Jwts;
+import com.chen.shop.sso.api.SSOApi;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.data.redis.core.StringRedisTemplate;
@@ -39,16 +33,19 @@ import java.util.List;
 public class BuyerAuthenticationFilter extends BasicAuthenticationFilter {
 
     private StringRedisTemplate redisTemplate;
+    private SSOApi ssoApi;
 
     /**
      * 自定义构造器
      *
      * @param authenticationManager
      * @param redisTemplate
+     * @param ssoApi
      */
-    public BuyerAuthenticationFilter(AuthenticationManager authenticationManager, StringRedisTemplate redisTemplate) {
+    public BuyerAuthenticationFilter(AuthenticationManager authenticationManager, StringRedisTemplate redisTemplate, SSOApi ssoApi) {
         super(authenticationManager);
         this.redisTemplate = redisTemplate;
+        this.ssoApi = ssoApi;
     }
 
     @Override
@@ -79,16 +76,8 @@ public class BuyerAuthenticationFilter extends BasicAuthenticationFilter {
      */
     private UsernamePasswordAuthenticationToken getAuthentication(String jwt, HttpServletResponse response) {
         try {
-            Claims claims = Jwts.parser()
-                    .setSigningKey(SecretKeyUtil.generalKey())
-                    .parseClaimsJws(jwt).getBody();
-            //获取存储在claims中的用户信息
-            String json = claims.get(SecurityKey.USER_CONTEXT).toString();
-            AuthUser authUser = JSON.parseObject(json, AuthUser.class);
-
-            //校验redis中是否有权限
-            Boolean hasKey = redisTemplate.hasKey(CachePrefix.ACCESS_TOKEN.name() + UserEnums.MEMBER.name() + jwt);
-            if (hasKey != null && hasKey) {
+            AuthUser authUser = ssoApi.checkToken(jwt);
+            if (authUser != null) {
                 //构造返回信息
                 List<GrantedAuthority> auths = new ArrayList<>();
                 auths.add(new SimpleGrantedAuthority("ROLE_" + authUser.getRole().name()));
@@ -98,8 +87,6 @@ public class BuyerAuthenticationFilter extends BasicAuthenticationFilter {
             }
             ResponseUtil.output(response, 401, Result.noLogin());
             return null;
-        } catch (ExpiredJwtException e) {
-            log.debug("user analysis exception:", e);
         } catch (Exception e) {
             log.error("user analysis exception:", e);
         }

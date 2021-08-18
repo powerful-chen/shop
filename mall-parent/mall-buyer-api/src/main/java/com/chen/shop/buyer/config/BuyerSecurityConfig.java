@@ -2,7 +2,9 @@ package com.chen.shop.buyer.config;
 
 import com.chen.shop.buyer.handler.security.BuyerAuthenticationFilter;
 import com.chen.shop.buyer.handler.security.CustomAccessDeniedHandler;
+import com.chen.shop.sso.api.SSOApi;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.core.StringRedisTemplate;
@@ -23,6 +25,8 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class BuyerSecurityConfig extends WebSecurityConfigurerAdapter {
 
+    @DubboReference(version = "1.0.0")
+    private SSOApi ssoApi;
     @Autowired
     private StringRedisTemplate redisTemplate;
     //忽略验证权限配置
@@ -65,6 +69,6 @@ public class BuyerSecurityConfig extends WebSecurityConfigurerAdapter {
                 .exceptionHandling().accessDeniedHandler(accessDeniedHandler)
                 .and()
                 //添加JWT认证过滤器
-                .addFilter(new BuyerAuthenticationFilter(authenticationManager(), redisTemplate));
+                .addFilter(new BuyerAuthenticationFilter(authenticationManager(), redisTemplate, ssoApi));
     }
 }

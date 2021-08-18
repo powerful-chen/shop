@@ -3,6 +3,8 @@ package com.chen.shop.common.security;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 /**
  * @ClassName AuthUser
  * @Description TODO
@@ -11,7 +13,7 @@ import lombok.NoArgsConstructor;
  */
 @Data
 @NoArgsConstructor
-public class AuthUser {
+public class AuthUser implements Serializable {
 
     //用户名
     private String username;
