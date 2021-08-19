@@ -7,13 +7,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="mall-buyer-provider" />
         <module name="mall-service-impl" />
         <module name="mall-buyer-api" />
         <module name="mall-common" />
         <module name="mall-dao" />
         <module name="mall-service" />
         <module name="mall-sso" />
-        <module name="mall-buyer-provider" />
         <module name="mall-model" />
       </profile>
     </annotationProcessing>
