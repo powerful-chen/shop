@@ -12,4 +12,6 @@ public interface CategoryService {
      * @return
      */
     List<CategoryVO> findCategoryTree(Long parentId);
+
+    List<String> getCategoryNameByIds(List<String> idList);
 }

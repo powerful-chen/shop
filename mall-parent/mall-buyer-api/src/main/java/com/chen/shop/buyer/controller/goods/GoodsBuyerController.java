@@ -1,14 +1,17 @@
 package com.chen.shop.buyer.controller.goods;
 
+import com.chen.shop.buyer.service.goods.GoodsBuyerService;
 import com.chen.shop.buyer.service.goods.GoodsSearchService;
 import com.chen.shop.common.vo.Result;
 import com.chen.shop.model.buyer.params.EsGoodsSearchParam;
 import com.chen.shop.model.buyer.params.PageParams;
+import com.chen.shop.model.buyer.vo.goods.GoodsDetailVO;
 import com.chen.shop.model.buyer.vo.goods.GoodsPageVO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -28,6 +31,8 @@ public class GoodsBuyerController {
 
     @Autowired
     private GoodsSearchService goodsSearchService;
+    @Autowired
+    private GoodsBuyerService goodsBuyerService;
 
     @ApiOperation(value = "获取搜索热词")
     @RequestMapping("/hot-words")
@@ -41,6 +46,13 @@ public class GoodsBuyerController {
     public Result<GoodsPageVO> getGoodsByPageFromEs(EsGoodsSearchParam goodsSearchParam, PageParams pageParams) {
         GoodsPageVO goodsPageVO = goodsSearchService.searchGoods(goodsSearchParam, pageParams);
         return Result.success(goodsPageVO);
+    }
+
+    @GetMapping(value = "/sku/{goodsId}/{skuId}")
+    public Result<GoodsDetailVO> getSku(@PathVariable("goodsId") String goodsId,
+                                        @PathVariable("skuId") String skuId) {
+
+        return goodsBuyerService.getGoodsSkuDetail(goodsId, skuId);
     }
 
 }

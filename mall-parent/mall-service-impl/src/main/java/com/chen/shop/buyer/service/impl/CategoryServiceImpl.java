@@ -11,6 +11,7 @@ import org.springframework.beans.BeanUtils;
 import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @ClassName CategoryServiceImpl
@@ -103,5 +104,14 @@ public class CategoryServiceImpl implements CategoryService {
 
         return categoryTree(parentId);
 
+    }
+
+    @Override
+    public List<String> getCategoryNameByIds(List<String> idList) {
+        LambdaQueryWrapper<Category> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.in(Category::getId, idList);
+        List<Category> categories = categoryMapper.selectList(queryWrapper);
+        List<String> strings = categories.stream().map(Category::getName).collect(Collectors.toList());
+        return strings;
     }
 }
