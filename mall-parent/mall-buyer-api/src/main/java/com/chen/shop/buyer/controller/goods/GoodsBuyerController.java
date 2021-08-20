@@ -2,9 +2,13 @@ package com.chen.shop.buyer.controller.goods;
 
 import com.chen.shop.buyer.service.goods.GoodsSearchService;
 import com.chen.shop.common.vo.Result;
+import com.chen.shop.model.buyer.params.EsGoodsSearchParam;
+import com.chen.shop.model.buyer.params.PageParams;
+import com.chen.shop.model.buyer.vo.goods.GoodsPageVO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -30,6 +34,13 @@ public class GoodsBuyerController {
     public Result<List<String>> getGoodsHotWords(Integer start, Integer end) {
         List<String> hotWords = goodsSearchService.getHotWords(start, end);
         return Result.success(hotWords);
+    }
+
+    @ApiOperation(value = "从ES中获取商品信息")
+    @GetMapping("/es")
+    public Result<GoodsPageVO> getGoodsByPageFromEs(EsGoodsSearchParam goodsSearchParam, PageParams pageParams) {
+        GoodsPageVO goodsPageVO = goodsSearchService.searchGoods(goodsSearchParam, pageParams);
+        return Result.success(goodsPageVO);
     }
 
 }

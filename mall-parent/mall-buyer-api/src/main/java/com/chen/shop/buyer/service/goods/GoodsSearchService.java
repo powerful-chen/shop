@@ -1,5 +1,10 @@
 package com.chen.shop.buyer.service.goods;
 
+import com.chen.shop.buyer.service.GoodsService;
+import com.chen.shop.model.buyer.params.EsGoodsSearchParam;
+import com.chen.shop.model.buyer.params.PageParams;
+import com.chen.shop.model.buyer.vo.goods.GoodsPageVO;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.ZSetOperations;
@@ -21,6 +26,9 @@ public class GoodsSearchService {
     @Autowired
     private StringRedisTemplate redisTemplate;
 
+    @DubboReference(version = "1.0.0")
+    private GoodsService goodsService;
+
     public static String HOT_WORDS_REDIS_KEY = "goods_hot_words";
 
     public List<String> getHotWords(Integer start, Integer end) {
@@ -40,5 +48,9 @@ public class GoodsSearchService {
             hotWords.add(typedTuple.getValue());
         }
         return hotWords;
+    }
+
+    public GoodsPageVO searchGoods(EsGoodsSearchParam goodsSearchParam, PageParams pageParams) {
+        return goodsService.searchGoods(goodsSearchParam, pageParams);
     }
 }

@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 /**
  * @ClassName PageParams
  * @Description TODO
@@ -14,7 +16,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class PageParams {
+public class PageParams implements Serializable {
 
     @ApiModelProperty(value = "页号")
     private Integer pageNumber = 1;
