@@ -1,7 +1,8 @@
 package com.chen.shop.common.utils.token;
 
 import com.alibaba.fastjson.JSON;
-import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.*;
+import io.jsonwebtoken.security.SignatureException;
 
 import java.util.Date;
 
@@ -24,5 +25,17 @@ public class TokenUtils {
                 //签名算法和密钥
                 .signWith(SecretKeyUtil.generalKey())
                 .compact();
+    }
+
+    public static Claims parserToken(String refreshToken) {
+        try {
+            Claims claims = Jwts.parser()
+                    .setSigningKey(SecretKeyUtil.generalKeyByDecoders())
+                    .parseClaimsJws(refreshToken).getBody();
+            return claims;
+        } catch (ExpiredJwtException | UnsupportedJwtException | MalformedJwtException | SignatureException | IllegalArgumentException e) {
+            //token 过期 认证失败等
+            return null;
+        }
     }
 }

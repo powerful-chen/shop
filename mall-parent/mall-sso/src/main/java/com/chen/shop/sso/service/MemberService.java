@@ -1,17 +1,20 @@
 package com.chen.shop.sso.service;
 
+import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.chen.shop.common.cache.CachePrefix;
 import com.chen.shop.common.context.ThreadContextHolder;
 import com.chen.shop.common.security.AuthUser;
 import com.chen.shop.common.security.Token;
 import com.chen.shop.common.security.UserEnums;
+import com.chen.shop.common.utils.token.SecurityKey;
 import com.chen.shop.common.utils.token.TokenUtils;
 import com.chen.shop.common.vo.Result;
 import com.chen.shop.model.buyer.enums.ClientType;
 import com.chen.shop.model.buyer.pojo.Member;
 import com.chen.shop.model.buyer.vo.member.MemberVO;
 import com.chen.shop.sso.mapper.MemberMapper;
+import io.jsonwebtoken.Claims;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -103,5 +106,26 @@ public class MemberService {
         BeanUtils.copyProperties(member, memberVO);
         memberVO.setId(String.valueOf(member.getId()));
         return memberVO;
+    }
+
+    public Result<Object> refreshToken(String refreshToken) {
+        /**
+         * 1、拿到refreshToken，进行jwt的解析，解析失败 token不合法
+         * 2、解析成功，就拿到了对应的jwt中信息 AuthUser对象
+         * 3、去redis中判断 refreshToken是否合法（是否过期）
+         * 4、如果redis存在，证明refreshToken可用
+         * 5、更新生成Token信息，返回即可（accessToken，refreshToken）
+         */
+        Claims claims = TokenUtils.parserToken(refreshToken);
+        String authUserJson = claims.get(SecurityKey.USER_CONTEXT).toString();
+        AuthUser authUser = JSON.parseObject(authUserJson, AuthUser.class);
+        String accessToken = TokenUtils.createToken(authUser.getUsername(), authUser, 7 * 24 * 60L);
+        redisTemplate.opsForValue().set(CachePrefix.ACCESS_TOKEN.name() + UserEnums.MEMBER.name() + accessToken, "true", 7, TimeUnit.DAYS);
+        String newRefreshToken = TokenUtils.createToken(authUser.getUsername(), authUser, 15 * 24 * 60L);
+        redisTemplate.opsForValue().set(CachePrefix.REFRESH_TOKEN.name() + UserEnums.MEMBER.name() + refreshToken, "true", 15, TimeUnit.DAYS);
+        Token token = new Token();
+        token.setAccessToken(accessToken);
+        token.setRefreshToken(newRefreshToken);
+        return Result.success(token);
     }
 }
